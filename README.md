@@ -6,6 +6,10 @@ Helper to test HTTP requests using nodeunit
 
 I found myself writing a lot of boilerplate when testing interactions with HTTP servers. `nodeunit-test-request` is that boilerplate extracted into a module so I can easily use it in my projects.
 
+## What?
+
+`nodeunit-test-request` provides boilerplate to setup `req.on('response')` callback with the provided callback as well as closing the servers being tested when response 'end' event is triggered.
+
 ## Usage
 
 Single server being tested:
