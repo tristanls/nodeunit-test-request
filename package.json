@@ -1,6 +1,6 @@
 {
   "name": "nodeunit-test-request",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Helper to test HTTP requests using nodeunit",
   "main": "index.js",
   "contributors": [
