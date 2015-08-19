@@ -19,6 +19,7 @@ var tests = module.exports = {};
 tests["single server usage"] = function(test)
 {
     var server = http.createServer(SERVER_OPTIONS);
+    /* server setup and .listen() code */
     var req = http.request(REQUEST_OPTIONS);
     testRequest(test, server, req, function(res)
     {
@@ -40,6 +41,7 @@ tests["multiple server usage"] = function(test)
 {
     var proxy = http.createServer(PROXY_OPTIONS);
     var server = http.createServer(SERVER_OPTIONS);
+    /* proxy and server setup and .listen() code */
     var req = http.request(REQUEST_OPTIONS);
     testRequest(test, [server, proxy], req, function(res)
     {
